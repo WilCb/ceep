@@ -1,0 +1,26 @@
+@use './variaveis' as v;
+
+@mixin df-gap-fd-aa-jc($gap: 0, $fd: row, $aa: stretch, $jc: flex-start) {
+    display: flex;
+    gap: $gap;
+    flex-direction: $fd;
+    align-items: $aa;
+    justify-content: $jc;
+}
+
+@mixin fs-fc-fw-ff($fs: 1rem, $fc: #000000, $fw: 400, $ff: 'Courier New') {
+    color: $fc;
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button {
+    background-color: v.$font-color;
+    border: none;
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    padding: .2rem .5rem;
+}

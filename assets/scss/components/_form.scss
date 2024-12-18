@@ -1,0 +1,32 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis' as v;
+
+.form {
+    @include mixins.df-gap-fd-aa-jc($jc: center);
+
+    .form-input,
+    .form-button {
+        border-radius: 0;
+        font-size: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .form-input {
+        background-color: v.$font-color;
+        border-color: rgba(255, 255, 255, 0.1);
+        outline: none;
+    }
+
+    .form-button {
+        background: v.$font-color;
+        border: 1px;
+        cursor: pointer;
+        margin-left: 0.25rem;
+        text-transform: uppercase;
+        
+        &:hover {
+            background: rgba(246, 241, 209, 0.1);
+            color: v.$font-color;
+        }
+    }
+}

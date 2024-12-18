@@ -1,0 +1,18 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis' as v;
+
+.todo-list {
+    @include mixins.df-gap-fd-aa-jc($gap: .875rem, $fd: column);
+
+    background-color: v.$bg-color-black;
+    font-family: v.$font-mono;
+    padding: 1rem;
+    min-width: 400px;
+    min-height: 300px;
+
+    .title {
+        @include mixins.fs-fc-fw-ff($fs: v.$font-title, $fc: v.$font-color, $ff: v.$font-biorhyme, $fw: 600);
+        border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+        padding: .5rem;
+    }
+}

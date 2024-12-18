@@ -1,0 +1,7 @@
+@use '../abstract/mixins';
+
+.app {
+    @include mixins.df-gap-fd-aa-jc($aa: center, $jc: center);
+    width: 100vw;
+    min-height: 100vh;
+}

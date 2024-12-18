@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.app {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.todo-list {
+  display: flex;
+  gap: 0.875rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  background-color: #0B2027;
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  min-width: 400px;
+  min-height: 300px;
+}
+.todo-list .title {
+  color: #F6F1D1;
+  font-family: "BioRhyme", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  padding: 0.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+.form .form-input,
+.form .form-button {
+  border-radius: 0;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+}
+.form .form-input {
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.form .form-button {
+  background: #F6F1D1;
+  border: 1px;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  text-transform: uppercase;
+}
+.form .form-button:hover {
+  background: rgba(246, 241, 209, 0.1);
+  color: #F6F1D1;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+}
+.list .task {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F6F1D1;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+}
+.list .task .check-button,
+.list .task .delete-button {
+  background-color: #F6F1D1;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+}
+.list .task.done .check-button {
+  background-color: #46494C;
+  color: #F6F1D1;
+}
+.list .task.done .content {
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */
